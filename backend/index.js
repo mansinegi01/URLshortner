@@ -10,11 +10,10 @@ const route = require('./routes/URLroutes');
 //cors
 let corsOption = {
     origin : "http://localhost:5173",
+    
     methods : "GET, POST, PUT, PATCH, DELETE",
     credentials : true
 }
-
-
 
 // Connection with mongoDB
 connectDB("mongodb://127.0.0.1:27017/shortURL")
